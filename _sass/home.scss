@@ -1,0 +1,28 @@
+section#home{
+
+	font-family: 'Jura', sans-serif;
+  	padding: 0;
+  	line-height: 100px;
+
+  	background-color: $white;
+
+	h1{
+		text-transform: uppercase;
+		font-size: 8vw;
+		margin-bottom: 5vh;
+		color: $black;
+	}
+
+	#links>*{
+		display: block;
+		font-family: 'Chakra Petch', sans-serif;
+		font-size: 4vw;
+		margin: 2vh;
+		padding: 15px 50px;
+		border: solid 2px $black;
+		border-radius: 10px;
+		color: $black;
+	}
+
+}
+

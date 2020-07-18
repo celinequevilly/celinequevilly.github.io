@@ -1,0 +1,57 @@
+section#geekotopie{
+
+	.rotating-text {
+	  font-size: 36px;
+	  color: white;
+	  transform: translateX(0px);
+	  width: 100px;
+	  p {
+		  display: inline-flex;
+		  margin-right: 40px;
+		  margin-left: -50px;
+		  vertical-align: top;
+		  .word {
+			  position: absolute;
+			  opacity: 0;
+			}
+		}
+	}
+
+
+.rotating-text p .word .letter {
+  transform-origin: center center 25px;
+}
+.rotating-text p .word .letter.out {
+  transform: rotateX(90deg);
+  transition: 0.32s cubic-bezier(0.6, 0, 0.7, 0.2);
+}
+.rotating-text p .word .letter.in {
+  transition: 0.38s ease;
+}
+.rotating-text p .word .letter.behind {
+  transform: rotateX(-90deg);
+}
+
+.alizarin {
+  color: $blue;
+}
+
+.wisteria {
+  color: $green;
+}
+
+.peter-river {
+  color: $red;
+}
+
+.emerald {
+  color: $yellow;
+}
+
+.sun-flower {
+  color: $pink;
+}
+
+
+}
+

@@ -18,38 +18,54 @@ $yellow:#DFC962;
 $yellow-green:#BED678;
 
 
-.white { background-color: white; }
-.grey { background-color: $grey; }
+.bg_white { background-color: white; }
+.bg_grey { background-color: $grey; }
 // home
-.black { background-color: $black; }
+.bg_black { background-color: $black; }
+.txt_black { color: $black; }
 // game seven
-.petrol { background-color: $petrol; }
+.bg_petrol { background-color: $petrol; }
+.txt_petrol { color: $petrol; }
 // game eleven
-.green { background-color: $green; }
+.bg_green { background-color: $green; }
+.txt_green { color: $green; }
 // game eight
-.green-blue { background-color: $green-blue; }
+.bg_green-blue { background-color: $green-blue; }
+.txt_green-blue { color: $green-blue; }
 // game thirteen
-.cyan { background-color: $cyan; }
+.bg_cyan { background-color: $cyan; }
+.txt_cyan { color: $cyan; }
 // game four
-.blue { background-color: $blue; }
+.bg_blue { background-color: $blue; }
+.txt_blue { color: $blue; }
 // game one
-.blue-purple { background-color: $blue-purple; } 
+.bg_blue-purple { background-color: $blue-purple; } 
+.txt_blue-purple { color: $blue-purple; }
 // game ten
-.purple { background-color: $purple; }
+.bg_purple { background-color: $purple; }
+.txt_purple { color: $purple; }
 // game fifteen
-.pink { background-color: $pink; }
+.bg_pink { background-color: $pink; }
+.txt_pink { color: $pink; }
 // game two
-.pink-red { background-color: $pink-red; }
+.bg_pink-red { background-color: $pink-red; }
+.txt_pink-red { color: $pink-red; }
 // game six
-.red { background-color: $red; }
+.bg_red { background-color: $red; }
+.txt_red { color: $red; }
 // game twelve
-.red-orange { background-color: $red-orange; }
+.bg_red-orange { background-color: $red-orange; }
+.txt_red-orange { color: $red-orange; }
 // game nine
-.orange { background-color: $orange; }
+.bg_orange { background-color: $orange; }
+.txt_orange { color: $orange; }
 // fourteen
-.orange-yellow { background-color: $orange-yellow; }
+.bg_orange-yellow { background-color: $orange-yellow; }
+.txt_orange-yellow { color: $orange-yellow; }
 // game five
-.yellow { background-color: $yellow; }
+.bg_yellow { background-color: $yellow; }
+.txt_yellow { color: $yellow; }
 // game three
-.yellow-green { background-color: $yellow-green; }
+.bg_yellow-green { background-color: $yellow-green; }
+.txt_yellow-green { color: $yellow-green; }
 

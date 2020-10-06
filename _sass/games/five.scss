@@ -1,0 +1,15 @@
+nav a.five{  
+  background-image: url('assets/img/games/happy.svg');
+  background-size: percentage(0.65);
+  &:hover, &.current, &:active{ 
+    background-image: url('assets/img/games/happy-color.svg');
+  }
+}
+
+
+section#five{
+	.bg-phone{
+		background-image: url('https://is4-ssl.mzstatic.com/image/thumb/Purple41/v4/4e/3f/00/4e3f007a-1c41-2d63-d315-9688d63f1e17/mzm.zrzlmkfz.jpg/392x696bb.jpg');
+	}
+}
+

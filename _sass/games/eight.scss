@@ -1,0 +1,13 @@
+nav a.eight{  
+  background-image: url('assets/img/games/sex.svg');
+  background-size: percentage(0.58);
+  &:hover, &.current, &:active{ 
+    background-image: url('assets/img/games/sex-color.svg');
+  }
+}
+
+section#eight{
+	.bg-phone{
+		background-image: url('https://jamaissansmacravate.fr/wp-content/uploads/2017/05/clash-royale-001.jpg');
+	}
+}

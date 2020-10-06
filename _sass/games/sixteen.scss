@@ -1,0 +1,7 @@
+nav a.sixteen{  
+  background-image: url('assets/img/games/ghost.svg');
+  background-size: percentage(0.68);
+  &:hover, &.current, &:active{ 
+    background-image: url('assets/img/games/ghost-color.svg');
+  }
+}

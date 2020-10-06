@@ -1,0 +1,7 @@
+nav a.nine{  
+  background-image: url('assets/img/games/translate.svg');
+  background-size: percentage(0.64);
+  &:hover, &.current, &:active{ 
+    background-image: url('assets/img/games/translate-color.svg');
+  }
+}

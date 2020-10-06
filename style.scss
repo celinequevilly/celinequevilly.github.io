@@ -7,21 +7,23 @@
 // STRUCTURE
 @import "base.scss";
 
-// ELEMENTS
-@import "elements/nav.scss";
-
 // PAGES
 @import "home.scss";
 @import "geekotopie.scss";
 @import "celinequevilly.scss";
 
+
+// ELEMENTS
+@import "elements/nav.scss";
+
 // GAMES PAGES
-@import "games/one.scss";
-@import "games/two.scss";
-@import "games/three.scss";
-@import "games/four.scss";
-@import "games/five.scss";
-@import "games/six.scss";
+@import "games.scss";
+// @import "games/one.scss";
+// @import "games/two.scss";
+// @import "games/three.scss";
+// @import "games/four.scss";
+// @import "games/five.scss";
+// @import "games/six.scss";
 @import "games/seven.scss";
 @import "games/eight.scss";
 @import "games/nine.scss";

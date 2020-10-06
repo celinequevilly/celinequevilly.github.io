@@ -1,0 +1,6 @@
+nav a.fifteen{  
+  background-image: url('assets/img/games/duck.svg');
+  &:hover, &.current, &:active{ 
+    background-image: url('assets/img/games/duck-color.svg');
+  }
+}

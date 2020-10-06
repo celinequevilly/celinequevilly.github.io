@@ -1,0 +1,13 @@
+nav a.two{  
+  background-image: url('assets/img/games/baby.svg');
+  &:hover, &.current, &:active{ 
+    background-image: url('assets/img/games/baby-color.svg');
+  }
+}
+
+section#two{
+	.bg-phone{
+		background-image: url('https://i.pinimg.com/originals/fb/0a/c8/fb0ac88f5804f872e39a9a9a3fd43217.png');
+	}
+}
+

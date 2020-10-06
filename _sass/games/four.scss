@@ -1,0 +1,15 @@
+nav a.four{  
+  background-image: url('assets/img/games/sign.svg');
+  background-size: percentage(1);
+  &:hover, &.current, &:active{ 
+    background-image: url('assets/img/games/sign-color.svg');
+  }
+}
+
+
+section#four{
+	.bg-phone{
+		background-image: url('https://dyw7ncnq1en5l.cloudfront.net/optim/test/90/9074/mv9__w800.jpg');
+	}
+}
+

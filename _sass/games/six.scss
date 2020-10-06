@@ -1,0 +1,15 @@
+nav a.six{  
+  background-image: url('assets/img/games/knife.svg');
+  background-size: percentage(0.64);
+  background-position: 50% 40%;
+  &:hover, &.current, &:active{ 
+    background-image: url('assets/img/games/knife-color.svg');
+  }
+}
+
+
+section#six{
+	.bg-phone{
+		background-image: url('https://proxymedia.woopic.com/951/p/store-fiches/ae2/8bf/f555e7697b52539dd5f39266e1/ae28bff555e7697b52539dd5f39266e1.jpg');
+	}
+}

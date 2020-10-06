@@ -1,0 +1,127 @@
+// --------- GAME ONE --------- //
+
+nav a.one{  
+  background-image: url('assets/img/games/virus.svg');
+  background-size: percentage(0.7);
+  // background-position: 50% 60%;
+  &:hover, &.current, &:active{ 
+    background-image: url('assets/img/games/virus-color.svg');
+  }
+}
+
+section#one{
+	.phone img{
+		background-image: url('assets/img/le-choix-de-covid.png');
+	}
+}
+
+
+// --------- GAME TWO --------- //
+
+nav a.two{  
+  background-image: url('assets/img/games/ring.svg');
+  background-size: percentage(0.5);
+  &:hover, &.current, &:active{ 
+    background-image: url('assets/img/games/ring-color.svg');
+  }
+}
+
+section#two{
+	.phone img{
+		background-image: url('assets/img/avec-qui.png');
+	}
+}
+
+
+// --------- GAME THREE --------- //
+
+nav a.three{  
+  background-image: url('assets/img/games/world.svg');
+  background-size: percentage(0.65);
+  &:hover, &.current, &:active{ 
+    background-image: url('assets/img/games/world-color.svg');
+  }
+}
+
+
+section#three{
+	.phone img{
+		background-image: url('https://images-eu.ssl-images-amazon.com/images/I/81M4b85QsGL.png');
+	}
+}
+
+
+// --------- GAME FOUR --------- //
+
+nav a.four{  
+  background-image: url('assets/img/games/sign.svg');
+  background-size: percentage(0.75);
+  &:hover, &.current, &:active{ 
+    background-image: url('assets/img/games/sign-color.svg');
+  }
+}
+
+
+section#four{
+	.phone img{
+		background-image: url('assets/img/drole-de-france.png');
+	}
+}
+
+
+// --------- GAME FIVE --------- //
+
+nav a.five{  
+  background-image: url('assets/img/games/happy.svg');
+  background-size: percentage(0.65);
+  &:hover, &.current, &:active{ 
+    background-image: url('assets/img/games/happy-color.svg');
+  }
+}
+
+
+section#five{
+	.phone img{
+		background-image: url('https://images-eu.ssl-images-amazon.com/images/I/81FRzmSvjdL.png');
+	}
+}
+
+
+
+// --------- GAME SIX --------- //
+
+nav a.six{  
+  background-image: url('assets/img/games/sex.svg');
+  background-size: percentage(0.6);
+  // background-position: 50% 40%;
+  &:hover, &.current, &:active{ 
+    background-image: url('assets/img/games/sex-color.svg');
+  }
+}
+
+
+section#six{
+	.phone img{
+		background-image: url('https://kickmygeek.com/p-28794_6-monument-valley-2-copie-d-ecran-2-sur-android.jpg');
+	}
+}
+
+
+// --------- GAME SEVEN --------- //
+
+nav a.seven{  
+  background-image: url('assets/img/games/mask.svg');
+  background-size: percentage(0.75);
+  background-position: 50% 60%;
+  &:hover, &.current, &:active{ 
+    background-image: url('assets/img/games/mask-color.svg');
+  }
+}
+
+
+section#seven{
+  .phone img{
+    background-image: url('https://global-img.gamergen.com/monument-valley-2-head_0190000000949176.png');
+  }
+}
+

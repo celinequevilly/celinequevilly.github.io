@@ -1,0 +1,8 @@
+nav a.fourteen{  
+  background-image: url('assets/img/games/hat.svg');
+  background-size: percentage(0.65);
+  background-position: 50% 40%;
+  &:hover, &.current, &:active{ 
+    background-image: url('assets/img/games/hat-color.svg');
+  }
+}

@@ -1,105 +1,125 @@
-section#home{
+section#geekotopie{
+	width: 74vw;
+  	padding-left: 20vw;
+  	padding-right: 16vw;
 
-  	.logo{
-  		img{
-  			width: auto;
-  			height: 12em;
-  			margin-bottom: -50px;
-  			margin-left: 7%;
-	  	}
-		h1{
-			font-family: 'Archistico Bold', sans-serif;
-			font-size: 5em;
-			color: $black;
-		}
-  	}
+  	font-family: 'Spartan', sans-serif;
+  	font-weight: 600;
+  	color: white; 
 
-	#links{
-		width: 95vw;
-		padding: 10px 0;
-		>*{
-			display: block;
-			font-family: Montserrat, sans-serif;
-			font-weight: 300;
-			font-size: 1.5em;
-			margin: 2.5%;
-		}
-		a[class*=container] {
-			text-align: center;
-			width: calc((90% / 2) - 15%);
-			display: flex;
-			justify-content: center;
-			align-items: center;
-			cursor: pointer;
-			color: $black;
-		}
-
-		.btn {
-			position: relative;
-			color: $black;
-			width: 90%;
-			height: 64px;
-			line-height: 64px;
-			transition: all 0.3s;
-		  	span {
-		    	transition: all 0.3s;
-		    	tranform: scale(1, 1);
-		  	}
-		}
-
-		.btn::before, .btn::after {
-			content: '';
-			position: absolute;
-			transition: all 0.3s;
-			bottom: 0;
-			left: 0;
-			width: 100%;
-			height: 100%;
-			z-index: 1;
-		}
-
-		.btn::before {
-		  opacity: 0;
-		  background: rgba(0, 0, 0, 0.1);
-		  transform: scale(1, 0.1);
-		}
-
-		.btn:hover::before {
-		  opacity: 1;
-		  transform: scale(1, 1);
-		}
-
-		.btn::after {
-		  transition: all 0.3s;
-		  border: 1px solid rgba(0, 0, 0, 0.5);
-		}
-
-		.btn:hover::after {
-		  transform: scale(1, .1);
-		  opacity: 0;
+	.rotating-text {
+	  font-size: 36px;
+	  color: white;
+	  transform: translateX(0px);
+	  width: 100px;
+	  p {
+		  display: inline-flex;
+		  margin-right: 50px;
+		  margin-left: -50px;
+		  vertical-align: top;
+		  .word {
+			  position: absolute;
+			  opacity: 0;
+			}
 		}
 	}
 
-	#celine{
-		font-family: 'Gochi Hand', cursive;
-	}
+
+.rotating-text p .word .letter {
+  transform-origin: center center 25px;
+}
+.rotating-text p .word .letter.out {
+  transform: rotateX(90deg);
+  transition: 0.32s cubic-bezier(0.6, 0, 0.7, 0.2);
+}
+.rotating-text p .word .letter.in {
+  transition: 0.38s ease;
+}
+.rotating-text p .word .letter.behind {
+  transform: rotateX(-90deg);
 }
 
-section#home::after {
-  content: "";
 
-  background: url("https://cdn.pixabay.com/photo/2020/07/09/13/36/abstract-5387367_1280.jpg");
-  background-size: cover;
-  background-position: top center;
-  background-repeat: no-repeat;
-  opacity: 0.8;
+}
 
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  position: absolute;
-  z-index: -1;   
+
+// GEEKOTOPIE GAMES
+
+section.game{
+  // width: 74vw;
+  width: 100%;
+  height: 100%;
+  padding-left: 15vw;
+  // padding-right: 16vw;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+
+  .phone{
+    // height: 100%;
+    // width: 100%;
+    width: 28%;
+    margin: 0 2% 0 15%;
+    // min-width: 900px;
+    
+    img{
+      position: absolute;
+      height: 65vh;
+      width: calc(65vh / 1.85);
+      background-size: 92% 91%;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  }
+
+  div.game-infos{
+    // min-width: 900px;
+    width: 38%;
+    margin: 0 15% 0 2%;
+    color: $white;
+    h2.game-title{
+      font-family: 'Spartan', sans-serif;
+      padding-bottom:20px;
+      text-shadow: 0.25px 0.5px 1px $petrol;
+    }
+    p.game-description{
+      font-family: 'Abel', sans-serif;
+      font-weight: 200;
+      text-shadow: 0.25px 0.5px 1px $petrol;
+    }
+  }
+}
+
+section.landscape {
+
+  .phone{
+    width: 36%;
+    margin: 0 5% 0 10%;
+    img{
+      width: 65vh;
+      height: calc(65vh / 1.85);
+    }
+  }
+  div.game-infos{
+    width: 30%;
+    margin: 0 14% 0 5%;
+  }
+}
+
+
+// colors tmp
+
+div#colors{
+  position: relative;
+  top : 200px;
+  right: 300px;
+  font-size:10px;
+  span{
+    width: 50px;
+    height: 50px;
+  }
 }
 
 

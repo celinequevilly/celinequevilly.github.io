@@ -1,8 +1,0 @@
-nav a.twelve{  
-  background-image: url('assets/img/games/mask.svg');
-  background-size: percentage(0.75);
-  background-position: 50% 60%;
-  &:hover, &.current, &:active{ 
-    background-image: url('assets/img/games/mask-color.svg');
-  }
-}

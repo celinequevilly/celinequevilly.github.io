@@ -1,7 +1,0 @@
-nav a.eleven{  
-  background-image: url('_assets/money.svg');
-  background-size: percentage(0.6);
-  &:hover, &.current, &:active{ 
-    background-image: url('_assets/money-color.svg');
-  }
-}

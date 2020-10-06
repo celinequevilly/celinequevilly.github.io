@@ -1,3 +1,85 @@
+// --------- GAME = DROLE DE FRANCE --------- //
+
+nav a.drole-de-france{  
+  background-image: url('assets/img/games/sign.svg');
+  background-size: percentage(0.75);
+  &:hover, &.current, &:active{ 
+    background-image: url('assets/img/games/sign-color.svg');
+  }
+}
+
+section#drole-de-france{
+  .phone img{
+    background-image: url('assets/img/drole-de-france.png');
+  }
+}
+
+
+// --------- GAME = SMILEY UNIVERS --------- //
+
+nav a.smiley-univers{  
+  background-image: url('assets/img/games/happy.svg');
+  background-size: percentage(0.65);
+  background-position: 48% 48%;
+  &:hover, &.current, &:active{ 
+    background-image: url('assets/img/games/happy-color.svg');
+  }
+}
+
+section#smiley-univers{
+  .phone img{
+    background-image: url('https://images-eu.ssl-images-amazon.com/images/I/81FRzmSvjdL.png');
+  }
+}
+
+
+// --------- GAME = MarieEmbrasseTue --------- //
+
+nav a.marie-embrasse-tue{  
+  background-image: url('assets/img/games/ring.svg');
+  background-size: percentage(0.5);
+  &:hover, &.current, &:active{ 
+    background-image: url('assets/img/games/ring-color.svg');
+  }
+}
+
+section#marie-embrasse-tue{
+  .phone img{
+    background-image: url('assets/img/avec-qui.png');
+  }
+}
+
+
+// --------- GAME = SEXY CARTOON --------- //
+
+nav a.sexy-cartoon{  
+  background-image: url('assets/img/games/sex.svg');
+  background-size: percentage(0.55);
+  background-position: 50% 40%;
+  &:hover, &.current, &:active{ 
+    background-image: url('assets/img/games/sex-color.svg');
+  }
+}
+
+section#sexy-cartoon{
+  .phone img{
+    background-image: url('https://kickmygeek.com/p-28794_6-monument-valley-2-copie-d-ecran-2-sur-android.jpg');
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+// ========================================================== //
+
+
 // --------- GAME ONE --------- //
 
 nav a.one{  

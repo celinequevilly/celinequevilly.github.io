@@ -1,191 +1,77 @@
-(function () {
-  let element = document.querySelector('.scroll-horizontal-container')
-  element.addEventListener('wheel', (e) => {
-    if (e.deltaY !== 0) {
-      e.preventDefault()
-      window.requestAnimationFrame(() => {
-        element.scrollLeft += e.deltaY
-      })
-    }
-  })
-})()
+$('a[href^="#"]').click(function(event) {
+        var id = $(this).attr("href");
+        var target = $(id).offset().top;
+        $('html, body').animate({scrollTop:target}, 500);
+        event.preventDefault();
+    });
 
-
-
-
-
-// Walk animation
-
-
-var xmlns = "http://www.w3.org/2000/svg",
-  select = function(s) {
-    return document.querySelector(s);
-  },
-  selectAll = function(s) {
-    return document.querySelectorAll(s);
-  },
-  container = select('.container'),
-  walkSVG = select('.walkSVG'),
-  partsGroup = select('.partsGroup'),
-    stage0 = select('.stage0'),
-    stage0Path = stage0.getAttribute('d')
-
-
-//center the container cos it's pretty an' that
-TweenMax.set(container, {
-  position: 'absolute',
-  top: '50%',
-  left: '50%',
-  xPercent: -50,
-  yPercent: -50
-})
-TweenMax.set('svg', {
-  visibility:'visible'
-})
-TweenMax.set(['.signGroup'], {
-   rotation:'-=3',
-    transformOrigin:'50% 100%'
-})
-TweenMax.set('.head', {
-   rotation:'+=3',
-    transformOrigin:'50% 100%'
-})
-
-function getWalker(el, id){
-  
-  var partsClone = el.cloneNode(true);
-  walkSVG.appendChild(partsClone);
-  var tl = new TimelineMax({repeat:-1});
-  
-  tl.to(partsClone.querySelector('.stage0'), 1, {
-    morphSVG:{shape:'.stage1'},
-    x:'+=6',
-    ease:Linear.easeNone
-    
-  })
-  .to(partsClone.querySelector('.bum'), 1, {
-    attr:{
-      cy:'+=10'
-    },
-    ease:Linear.easeNone
-    
-  },'-=1')
-  .to(partsClone.querySelector('.signGroup'), 1, {
-    y:'+=10',    
-     rotation:'+=6',
-    transformOrigin:'50% 100%',
-    ease:Linear.easeNone
-    
-  },'-=1')
- .to(partsClone.querySelector('.head'), 1, {
-    //y:'+=10',    
-     rotation:'-=6',
-    ease:Linear.easeNone
-    
-  },'-=1')
-  
-  .to(partsClone.querySelector('.stage0'), 1, {
-    morphSVG:{shape:'.stage2'},
-    x:'-=6',
-    ease:Linear.easeNone
-    
-  })
-  .to(partsClone.querySelector('.bum'), 1, {
-    attr:{
-      cy:'-=10'
-    },
-    ease:Linear.easeNone
-    
-  },'-=1')
-  .to(partsClone.querySelector('.signGroup'), 1, {
-    y:'-=10', 
-    rotation:'-=6',
-    ease:Linear.easeNone    
-  },'-=1')  
-  .to(partsClone.querySelector('.head'), 1, {
-    rotation:'+=6',
-    ease:Linear.easeNone    
-  },'-=1')    
-
-  .to(partsClone.querySelector('.stage0'), 1, {
-    morphSVG:{shape:'.stage3'},
-    x:'+=6',
-    ease:Back.easeOut.config(1.4)
-  })
-  .to(partsClone.querySelector('.bum'), 1, {
-    attr:{
-      cy:'+=10'
-    },
-    ease:Linear.easeNone
-    
-  },'-=1')
-  
-  .to(partsClone.querySelector('.signGroup'), 1, {
-    y:'+=10',
-    rotation:'+=6',
-    transformOrigin:'50% 100%',
-    ease:Linear.easeNone
-    
-  },'-=1')  
-  .to(partsClone.querySelector('.head'), 1, {
-    rotation:'-=6',
-    ease:Power1.easeOut
-    
-  },'-=1')  
-  
-  .to(partsClone.querySelector('.stage0'), 1, {
-    morphSVG:{shape:stage0Path},
-    x:'-=6',
-    ease:Linear.easeNone
-    
-  })
-  .to(partsClone.querySelector('.bum'), 1, {
-    attr:{
-      cy:'-=10'
-    },
-    ease:Linear.easeNone
-    
-  },'-=1')
-    .to(partsClone.querySelector('.signGroup'), 1, {
-    y:'-=10',
-    rotation:'-=6',
-    ease:Linear.easeNone
-    
-  },'-=1') 
-      .to(partsClone.querySelector('.head'), 1, {
-    rotation:'+=6',
-    ease:Power1.easeIn
-    
-  },'-=1') 
-  
-  if(id == 0){
-    partsClone.querySelector('.bum').setAttribute('opacity', 0);    partsClone.querySelector('.signGroup').setAttribute('opacity', 0);
-    partsClone.querySelector('.head').setAttribute('opacity', 0);
-  }
-  
-  return tl;
-  
+function getTargetTop(elem){
+    var id = elem.attr("href");
+    var offset = 60;
+    return $(id).offset().top - offset;
 }
 
-function moveLine(){
-  
-  
+
+    $(window).scroll(function(e){
+        isSelected($(window).scrollTop())
+    });
+
+var sections = $('a[href^="#"]');
+
+function isSelected(scrolledTo){
+   
+    var threshold = 100;
+    var i;
+
+    for (i = 0; i < sections.length; i++) {
+        var section = $(sections[i]);
+        var target = getTargetTop(section);
+       
+        if (scrolledTo > target - threshold && scrolledTo < target + threshold) {
+            sections.removeClass("active");
+            section.addClass("active");
+        }
+
+    };
 }
-var roadTl = new TimelineMax();
-roadTl.to('.dotty', 2.8, {
-    strokeDashoffset:160,
-  ease:Linear.easeNone,
-  repeat:-1
 
-})
 
-var mainTl = new TimelineMax({onUpdate:moveLine});
-mainTl.add(getWalker(partsGroup, 0), 0);
-mainTl.add(getWalker(partsGroup, 1), 2);
-mainTl.add(roadTl, 0);
-mainTl.seek(100);
-mainTl.timeScale(2.73);
+// Index text
 
-walkSVG.removeChild(select('.original'))
-//ScrubGSAPTimeline(tl)
 
+var words = document.querySelectorAll(".word");
+words.forEach(function (word) {
+    var letters = word.textContent.split("");
+    word.textContent = "";
+    letters.forEach(function (letter) {
+        var span = document.createElement("span");
+        span.textContent = letter;
+        span.className = "letter";
+        word.append(span);
+    });
+});
+var currentWordIndex = 0;
+var maxWordIndex = words.length - 1;
+words[currentWordIndex].style.opacity = "1";
+var rotateText = function () {
+    var currentWord = words[currentWordIndex];
+    var nextWord = currentWordIndex === maxWordIndex ? words[0] : words[currentWordIndex + 1];
+    // rotate out letters of current word
+    Array.from(currentWord.children).forEach(function (letter, i) {
+        setTimeout(function () {
+            letter.className = "letter out";
+        }, i * 0);
+    });
+    // reveal and rotate in letters of next word
+    nextWord.style.opacity = "1";
+    Array.from(nextWord.children).forEach(function (letter, i) {
+        letter.className = "letter behind";
+        setTimeout(function () {
+            letter.className = "letter in";
+        }, 340 + i * 0);
+    });
+    currentWordIndex =
+        currentWordIndex === maxWordIndex ? 0 : currentWordIndex + 1;
+};
+rotateText();
+setInterval(rotateText, 4000);

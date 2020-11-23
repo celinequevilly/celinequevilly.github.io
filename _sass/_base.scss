@@ -3,7 +3,7 @@
 // ------------------------------------------------- //
 
 html{
-  background-color: $black;
+  background-color: purple;
 }
 
 body {
@@ -30,8 +30,28 @@ li{
 a{
   text-decoration:none;
   text-align: center;
-  color: $black;
+  color: #000;
   cursor: pointer;
+}
+
+.pink{
+  background-color: pink;
+}
+
+.green{
+  background-color: green;
+}
+
+.blue{
+  background-color: blue;
+}
+
+.red{
+  background-color: red;
+}
+
+.dark{
+  background-color: rgb(34, 42, 48);
 }
 
 // ------------------------------------------------- //
@@ -164,7 +184,6 @@ a{
   display: flex;
   align-self: stretch;
 }
-
 
   
 

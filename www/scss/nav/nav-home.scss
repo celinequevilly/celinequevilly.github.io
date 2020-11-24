@@ -1,0 +1,119 @@
+
+/* ----------------- ********* NAV HOME CSS ********* ----------------- */
+
+
+
+/*| Nav highlightTestIn |*/
+
+div.nav-home {
+    font-family: 'Lato', sans-serif;
+    margin: 0 auto;
+    padding: 5em 3em;
+    text-align: center;
+}
+
+div.nav-home a {
+    color: #FFF;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 10px 25px;
+    position: relative;
+    z-index: 1;
+    cursor: pointer;
+}
+
+
+div.highlightTextIn a:before
+{
+    position: absolute;
+    color: black;
+    top: 0px;
+    left: 0px;
+    padding: 10px 25px;
+    overflow: hidden;
+    content: attr(alt);
+    transition: all 0.3s;
+    transform: scale(0.8);
+    opacity: 0;
+} 
+
+div.highlightTextIn a:hover:before
+{
+    transform: scale(1);
+    opacity: 1;
+}
+
+/* Highlight text in  */
+div.highlightTextIn a
+{
+    color: rgba(0, 0, 0, 0.4); 
+}
+
+div.highlightTextIn a:before
+{
+    transform: scale(1.2);
+} 
+
+/*| End Nav highlightTestIn |*/
+
+
+/* ------------------------------------------------------- */
+
+
+/* ----------------- ********* BASE @MEDIA ********* ----------------- */
+
+
+
+/* Desktop */
+
+@media screen and (min-width: 1400px) {
+    div.nav-home a {
+        font-size: 22px;
+        padding: 10px 30px;
+    }
+    div.highlightTextIn a:before{
+        font-size: 22px;
+        padding: 10px 30px;
+    }
+}
+
+/* Tablet and Mobil */
+@media screen and (max-width: 1227px) {
+    div.nav-home a {
+        font-size: 18px;
+        padding: 10px 20px;
+    }
+    div.highlightTextIn a:before{
+        font-size: 18px;
+        padding: 10px 20px;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    div.nav-home a {
+        font-size: 14px;
+        padding: 10px 20px;
+    }
+    div.highlightTextIn a:before{
+        font-size: 14px;
+        padding: 10px 20px;
+    }
+}
+
+@media screen and (max-width: 825px) {
+    div.nav-home a {
+        font-size: 12px;
+        padding: 10px 20px;
+    }
+    div.highlightTextIn a:before{
+        font-size: 12px;
+        padding: 10px 20px;
+    }
+}
+
+
+
+/*| |*/
+
+

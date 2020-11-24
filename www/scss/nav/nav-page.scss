@@ -1,0 +1,352 @@
+/* ----------------- Navigation ----------------- */
+
+#navBar {
+  position: fixed;
+  z-index: 500;
+  margin: 0;
+  width: 100%;
+  height: 75px;
+  background: white;
+  box-shadow: 0 3px 10px -2px rgba(0,0,0,.2);
+}
+
+#logo{
+	font-family: 'Oswald', sans-serif;
+	font-size: 1.7em;
+	text-transform: uppercase;
+	letter-spacing: -0.125em;
+	position: absolute;
+	color: #2D2D2D;
+	font-weight: 200;
+	letter-spacing: 0.02em;
+	margin: 23px 0 0 40px;
+	height: 100%;
+}
+
+#navigation a h1:hover {
+}
+
+
+/*| Desktop Navigation |*/
+
+#navigation{
+	font-family: 'Lato', sans-serif;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+  height: 75px;
+	border: 1px solid rgba(0,0,0,.1);
+}
+
+#navigation ul{
+	list-style: none;
+	position: relative;
+	float: right;
+	margin-right: 18px;
+	/*display: inline-table;*/
+}
+
+#navigation ul li.nav-part{
+  	float: left;
+
+  	-webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+  	transition: all .2s ease-in-out;
+
+    &.selected {
+      background-color: whitesmoke;
+    }
+}
+
+#navigation ul li a{
+  	-webkit-transition: all .1s ease-in-out;
+    -moz-transition: all .1s ease-in-out;
+  	transition: all .1s ease-in-out;
+}
+
+#navigation ul li:hover{
+	background: whitesmoke;
+  	/*background: rgba(0,0,0,.1);*/
+	/*background: #96908D;*/
+}
+#navigation ul li:active{
+	background: whitesmoke;
+}
+#navigation ul li a:hover{
+  	/*color: #1a1e24;
+  	font-weight: 900;*/
+ }
+
+#navigation ul li:hover > ul{
+  	display: block;
+}
+
+#navigation ul li a{
+	display: block; 
+	padding: 27.5px 20px;
+	color: #2D2D2D;
+	font-size: 16px;
+	letter-spacing: 1px;
+	text-decoration: none;
+  	text-transform: uppercase;
+}
+
+/*| End Desktop Navigation |*/
+
+
+
+/*| Burger Navigation |*/
+
+
+/* drawer menu */
+
+#drawer-menu ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+#drawer-menu ul li a{
+
+}
+
+#drawer-menu {
+	box-sizing: border-box;
+	position: fixed;
+	top: 0;
+	right: 0;
+	width: 300px;
+	height: 100%;
+	padding: 120px 0;
+  	background: #222;
+
+  	-webkit-transition-property: all;
+	transition-property: all;
+	-webkit-transition-duration: .5s;
+	transition-duration: .5s;
+	-webkit-transition-delay: 0s;
+	transition-delay: 0s;
+
+	-webkit-transform-origin: right center;
+	-ms-transform-origin: right center;
+	transform-origin: right center;
+	-webkit-transform: perspective(500px) rotateY(-90deg);
+	transform: perspective(500px) rotateY(-90deg);
+
+	opacity: 0;
+	box-shadow: 0px 0px 5px #1E1E1E;
+}
+
+#drawer-menu ul li {
+  	text-align: right;
+}
+
+#drawer-menu ul li a {
+	text-decoration: none;
+  	text-transform: uppercase;
+  	font-family: 'Lato', sans-serif;
+  	letter-spacing: .3em;
+  	padding-right: 40px;
+	display: block;
+	height: 50px;
+	line-height: 50px;
+	font-size: 13px;
+	color: #fff;
+	-webkit-transition: all .8s;
+	transition: all .8s;
+}
+
+#drawer-menu ul li a:hover {
+	color: #1a1e24;
+	background: #96908D;
+	font-weight: 900;
+}
+
+
+/* checkbox *
+
+.check {
+  display: none;
+}
+
+
+/* menu button - label tag */
+
+#menu-btn {
+  position: fixed;
+  top: 28px;
+  right: 40px;
+  display: block;
+  width: 40px;
+  height: 40px;
+  font-size: 10px;
+  text-align: center;
+  cursor: pointer;
+  z-index: 3;
+}
+
+.bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 40px;
+  height: 1px;
+  background: #2D2D2D;
+
+  -webkit-transition: all .5s;
+  transition: all .5s;
+  -webkit-transform-origin: left top;
+  -ms-transform-origin: left top;
+  transform-origin: left top;
+}
+
+.bar.middle {
+  top: 12px;
+  opacity: 1;
+}
+
+.bar.bottom {
+  top: 24px;
+  -webkit-transform-origin: left bottom;
+  -ms-transform-origin: left bottom;
+  transform-origin: left bottom;
+}
+
+#menu-btn__text {
+  position: absolute;
+  bottom: -15px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  color: #fff;
+  /*-webkit-transition: all .5s;
+  transition: all .5s;*/
+  display: block;
+  visibility: visible;
+  opacity: 1;
+}
+
+
+/* Hover Effects */
+
+#menu-btn:hover .bar {
+  background: black;
+}
+
+#menu-btn:hover #menu-btn__text {
+  color: #999;
+}
+
+#close-menu {
+  position: fixed;
+  top: 0;
+  right: 300px;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0);
+
+  -webkit-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: .3s;
+  transition-duration: .3s;
+  -webkit-transition-delay: 0s;
+  transition-delay: 0s;
+
+  visibility: hidden;
+  opacity: 0;
+}
+
+
+/* checked */
+
+.check:checked ~ #drawer-menu {
+  -webkit-transition-delay: .3s;
+  transition-delay: .3s;
+  -webkit-transform: none;
+  -ms-transform: none;
+  transform: none;
+
+  opacity: 1;
+  z-index: 2;
+}
+
+.check:checked ~ .contents {
+  -webkit-transition-delay: 0s;
+  transition-delay: 0s;
+  -webkit-transform: translateX(-300px);
+  -ms-transform: translateX(-300px);
+  transform: translateX(-300px);
+}
+
+.check:checked ~ #menu-btn #menu-btn__text {
+  visibility: hidden;
+  opacity: 0;
+}
+
+.check:checked ~ .bar.top {
+  width: 56px;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.check:checked ~ .bar.middle {
+  opacity: 0;
+}
+
+.check:checked ~ .bar.bottom {
+  width: 56px;
+  top: 40px;
+  -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+.check:checked ~ #close-menu {
+  -webkit-transition-duration: 1s;
+  transition-duration: 1s;
+  -webkit-transition-delay: .3s;
+  transition-delay: .3s;
+  background: rgba(0, 0, 0, .5);
+  visibility: visible;
+  opacity: 1;
+  z-index: 3;
+}
+
+
+/* Hidden Burger */
+
+#menu-btn, #drawer-menu, #close-menu{
+	display: none;
+}
+
+
+/*| End Burger Navigation |*/
+
+
+
+/* ----------------- ********* NAV PAGE @MEDIA ********* ----------------- */
+
+
+/* Tablet and Mobil */
+
+@media screen and (max-width: 768px) {
+  #navigation ul li{
+    display: none;
+  }
+  #menu-btn, #drawer-menu, #close-menu{
+    display: block;
+  }
+  #menu-btn:hover span.bar.middle {
+    width: 30px;
+  }
+  #menu-btn:hover span.bar.bottom {
+    width: 20px;
+  }
+}
+
+/*| |*/
+

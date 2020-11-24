@@ -1,0 +1,207 @@
+/* ------------------------- SKILLS ----------------------------- */
+
+/* Skill bars */
+
+.skills-bar{
+  width: 100%;
+  display: flex;
+  /*padding-right: 25px;*/
+  padding-top: 6%;
+}
+
+.skills-bar > div{
+  width: 100%;
+  padding: 0 2.5%;
+}
+
+.skills-bar > div li{
+  color: #2D2D2D;
+}
+
+#skill-left{
+
+}
+
+#skill-right{
+
+}
+
+/* Box element */
+
+.name-box{
+  padding: 0 0 5% 0;
+  font-size: 1.4em;
+  text-align: center;
+  font-weight: 200;
+}
+
+h4.name-box{
+  text-transform: none;
+  color: #2D2D2D;
+  padding-top: 10%;
+  padding-bottom: 5%;
+}
+
+.box {
+  height: .75em;
+  margin: 2% 0;
+  width: 100%;
+  border: .05em solid #2D2D2D;
+  border-radius: 2px;
+  display: inline-block;
+}
+
+.box div{
+  height: .65em;
+  background: #2D2D2D;
+  display: block;
+}
+
+/* ------------------------- Graphisme ----------------------------- */
+
+// Illustrator
+#one-one {
+  width: 100%; 
+}
+// Photoshop
+#one-two {
+  width: 100%;
+}
+// Indesign
+#one-three {
+  width: 100%;
+}
+// Sketch
+#one-four {
+  width: 75%;
+}
+// Zeplin
+#one-five {
+  width: 50%;
+}
+// UI/UX Design
+#one-six {
+  width: 85%;
+}
+// Dessin
+#one-seven {
+  width: 25%;
+}
+// vide
+#one-height {
+  width: 0%;
+}
+
+/* ------------------------- Developpeur ----------------------------- */
+
+// HTML
+#two-one {
+  width: 100%; 
+}
+// CSS
+#two-two {
+  width: 100%;
+}
+// Javascript
+#two-three {
+  width: 50%;
+}
+// Responsive
+#two-four {
+  width: 100%;
+}
+// Wordpress
+#two-five {
+  width: 100%;
+}
+// PHP
+#two-six {
+  width: 25%;
+}
+// SQL
+#two-seven {
+  width: 25%;
+}
+// vide
+#two-height {
+  width: 0%;
+}
+
+/* ------------------------- Photographe ----------------------------- */
+
+// Studio
+#three-one {
+  width: 75%; 
+}
+// Reportage
+#three-two {
+  width: 100%;
+}
+// Portrait
+#three-three {
+  width: 100%;
+}
+// Paysage
+#three-four {
+  width: 100%;
+}
+
+/* ------------------------- Chef de projet ----------------------------- */
+
+// Agile
+#three-five {
+  width: 80%;
+}
+// MS Office
+#three-six {
+  width: 90%;
+}
+// iWork
+#three-seven {
+  width: 100%;
+}
+// Gantt
+#three-height {
+  width: 90%;
+}
+
+/* ------------------------- Communication Web ----------------------------- */
+
+// SEO
+#four-one {
+  width: 90%; 
+}
+// Mailing
+#four-two {
+  width: 80%;
+}
+// Community Management
+#four-three {
+  width: 65%;
+}
+// SEA
+#four-four {
+  width: 25%;
+}
+
+/* ------------------------- Vidéo ----------------------------- */
+
+// Réalisation
+#four-five {
+  width: 70%;
+}
+// Adobe Premiere
+#four-six {
+  width: 100%;
+}
+// After Effect
+#four-seven {
+  width: 30%;
+}
+// Scénarisation
+#four-height {
+  width: 75%;
+}
+
+/* ------------------------------------------------------ */
+

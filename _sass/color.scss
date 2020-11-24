@@ -1,0 +1,71 @@
+$grey:#E8EAF1;
+$black: #222;
+$white: #fff;
+$petrol: #131E29;
+$green: #A0C8A8;
+$green-blue: #72B0BD;
+$cyan: #6DB3D2;
+$blue: #587CAF;
+$blue-purple: #6058AF;
+$purple: #736C99;
+$pink: #AF58A7;
+$pink-red: #AF587C;
+$red: #F5736A;
+$red-orange:#F58A6A;
+$orange:#FBAE7D;
+$orange-yellow:#F5BE6A;
+$yellow:#DFC962;
+$yellow-green:#BED678;
+
+
+.bg_white { background-color: white; }
+.bg_grey { background-color: $grey; }
+// home
+.bg_black { background-color: $black; }
+.txt_black { color: $black; }
+// game seven
+.bg_petrol { background-color: $petrol; }
+.txt_petrol { color: $petrol; }
+// game eleven
+.bg_green { background-color: $green; }
+.txt_green { color: $green; }
+// game eight
+.bg_green-blue { background-color: $green-blue; }
+.txt_green-blue { color: $green-blue; }
+// game thirteen
+.bg_cyan { background-color: $cyan; }
+.txt_cyan { color: $cyan; }
+// game four
+.bg_blue { background-color: $blue; }
+.txt_blue { color: $blue; }
+// game one
+.bg_blue-purple { background-color: $blue-purple; } 
+.txt_blue-purple { color: $blue-purple; }
+// game ten
+.bg_purple { background-color: $purple; }
+.txt_purple { color: $purple; }
+// game fifteen
+.bg_pink { background-color: $pink; }
+.txt_pink { color: $pink; }
+// game two
+.bg_pink-red { background-color: $pink-red; }
+.txt_pink-red { color: $pink-red; }
+// game six
+.bg_red { background-color: $red; }
+.txt_red { color: $red; }
+// game twelve
+.bg_red-orange { background-color: $red-orange; }
+.txt_red-orange { color: $red-orange; }
+// game nine
+.bg_orange { background-color: $orange; }
+.txt_orange { color: $orange; }
+// fourteen
+.bg_orange-yellow { background-color: $orange-yellow; }
+.txt_orange-yellow { color: $orange-yellow; }
+// game five
+.bg_yellow { background-color: $yellow; }
+.txt_yellow { color: $yellow; }
+// game three
+.bg_yellow-green { background-color: $yellow-green; }
+.txt_yellow-green { color: $yellow-green; }
+
